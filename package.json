@@ -1,0 +1,15 @@
+{
+  "name": "download-bench",
+  "version": "1.0.0",
+  "description": "Замер скорости скачивания: 10 последовательных запросов к одному URL",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "bench": "node bench.js",
+    "samples": "node generate-samples.js",
+    "serve": "node serve.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
