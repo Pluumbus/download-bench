@@ -90,7 +90,9 @@ const server = createServer((req, res) => {
 
 server.on('error', (error) => {
   if (error.code === 'EADDRINUSE' || error.code === 'EACCES') {
-    console.error(`Порт ${PORT} занят. Запустите так: $env:PORT=3456; node serve.js`);
+    console.error(`Порт ${PORT} занят.`);
+    console.error('PowerShell: $env:PORT=3456; node serve.js');
+    console.error('Git Bash:   PORT=3456 node serve.js');
   } else {
     console.error(error.message);
   }
